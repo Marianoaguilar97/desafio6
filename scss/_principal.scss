@@ -1,4 +1,4 @@
-$colorLetra: red;
+$colorLetra: rgb(0, 0, 0);
 
 
 body {
@@ -11,9 +11,14 @@ body {
  	display: flex;
  	justify-content: space-between;
 	align-items: center;
+ 
+
+ 	ul a:hover {
+	background-color: azure;
+	}
  }
 
-.logo1  {
+ .logo1  {
 	width: 300px;
 	height: 300px;
 }
@@ -23,30 +28,25 @@ body {
 	width: 300px;
 	height: 300px;
 }
-
- .navegacion ul {
- 	margin: 0;
- 	padding: 0;
- 	list-style: none
- }
-
- .navegacion ul li {
- 	display: inline-block;
- }
-
- .navegacion ul li a {
- 	display: block;
- 	padding: 0.5rem 1rem;
- 	text-decoration: none;
- 	color: $colorLetra;
- 	background-color: blanchedalmond;
- 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 	font-size: 14px;
- }
-
- header ul a:hover {
- 	background-color: azure;
- }
+.navegacion {
+ 	 ul {
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 		li {
+ 			display: inline-block;
+ 			a {
+ 				display: block;
+ 				padding: 0.5rem 1rem;
+ 				text-decoration: none;
+ 				color: $colorLetra;
+ 				background-color: blanchedalmond;
+ 				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 				font-size: 14px;
+ 			}
+		}
+	}
+}
 
  .redes__sociales {
 	 padding: 0;
@@ -54,7 +54,7 @@ body {
  	img {
  	width: 50px;
 	height: 50px;
- }
+ 	}
  }
  /*main general*/
 
@@ -82,7 +82,7 @@ body {
 	text-align: center;
 	margin: 10px 40px;
 	text-decoration: none;
-}
+	}
  } 
 
 .seccion__encuadrado:hover {
@@ -194,34 +194,33 @@ body {
  	background-color: rgba(168, 121, 59, 0.808);
  	border-radius: 4px;
  	font-family: 'calibri';
- }
 
- .footer__formulario h4 {
- 	font-size: 22px;
- 	margin-bottom: 20px;
+	 h4 {
+ 		font-size: 22px;
+ 		margin-bottom: 20px;
+ 	}
+
+ 	textarea {
+		width: 100%;
+		background: #c4a244;
+		border-radius: 4px;
+		border: 1px solid #000000;
+		font-family: 'calibri';
+		font-size: 18px;
+		color: white;
+ 	}
  }
 
  .controles {
- 	width: 100%;
- 	background: #c4a244;
- 	border-radius: 4px;
- 	margin-bottom: 16px;
- 	border: 1px solid #000000;
- 	font-family: 'calibri';
- 	font-size: 18px;
- 	color: white;
- }
-
- .footer__formulario textarea {
 	width: 100%;
 	background: #c4a244;
 	border-radius: 4px;
+	margin-bottom: 16px;
 	border: 1px solid #000000;
 	font-family: 'calibri';
 	font-size: 18px;
 	color: white;
- }
-
+}
 
  .boton {
  	width: 100%;

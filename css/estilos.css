@@ -21,6 +21,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  header ul a:hover {
+    background-color: azure; }
 
 .logo1 {
   width: 300px;
@@ -35,21 +37,16 @@ header {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.navegacion ul li {
-  display: inline-block; }
-
-.navegacion ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: red;
-  background-color: blanchedalmond;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 14px; }
-
-header ul a:hover {
-  background-color: azure; }
+  .navegacion ul li {
+    display: inline-block; }
+    .navegacion ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: black;
+      background-color: blanchedalmond;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 14px; }
 
 .redes__sociales {
   padding: 0; }
@@ -171,10 +168,17 @@ footer img {
   background-color: rgba(168, 121, 59, 0.808);
   border-radius: 4px;
   font-family: 'calibri'; }
-
-.footer__formulario h4 {
-  font-size: 22px;
-  margin-bottom: 20px; }
+  .footer__formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .footer__formulario textarea {
+    width: 100%;
+    background: #c4a244;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white; }
 
 .controles {
   width: 100%;
@@ -186,21 +190,12 @@ footer img {
   font-size: 18px;
   color: white; }
 
-.footer__formulario textarea {
-  width: 100%;
-  background: #c4a244;
-  border-radius: 4px;
-  border: 1px solid #000000;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white; }
-
 .boton {
   width: 100%;
   background: #c4a244;
   border: none;
   padding: 12px;
-  color: red;
+  color: black;
   margin: 16px 0;
   font-size: 16px; }
 
@@ -218,11 +213,11 @@ form {
     height: 200px; }
   .navegacion {
     width: 100%; }
-  .navegacion ul li {
-    display: block;
-    padding: 1px; }
-  .navegacion ul li a {
-    padding: 0.5rem 0; }
+    .navegacion ul li {
+      display: block;
+      padding: 1px; }
+      .navegacion ul li a {
+        padding: 0.5rem 0; }
   .redes__sociales {
     padding: 0; }
   /*footer*/
@@ -239,7 +234,7 @@ form {
   .footer__formulario {
     margin-left: auto;
     margin-right: auto; }
+    .footer__formulario textarea {
+      width: 90%; }
   .controles {
-    width: 90%; }
-  .footer__formulario textarea {
     width: 90%; } }
